@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EverythingView">
+        <attr name="testBoolean"   format="boolean"/>
+        <attr name="testInteger"   format="integer"/>
+        <attr name="testLong"      format="integer"/>
+        <attr name="testFloat"     format="float"/>
+        <attr name="testDouble"    format="float"/>
+        <attr name="testString"    format="string"/>
+        <attr name="testColor"     format="color"/>
+        <attr name="testDimen"     format="dimension"/>
+        <attr name="testResource"  format="reference|string"/>
+    </declare-styleable>
+
+</resources>

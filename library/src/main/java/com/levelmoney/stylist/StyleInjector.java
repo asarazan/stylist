@@ -24,7 +24,7 @@ import com.levelmoney.stylist.annotations.StyleColor;
 import com.levelmoney.stylist.annotations.StyleDimen;
 import com.levelmoney.stylist.annotations.StyleDrawable;
 import com.levelmoney.stylist.annotations.StyleFloat;
-import com.levelmoney.stylist.annotations.StyleInt;
+import com.levelmoney.stylist.annotations.StyleInteger;
 import com.levelmoney.stylist.annotations.StyleResource;
 import com.levelmoney.stylist.annotations.StyleString;
 
@@ -90,10 +90,10 @@ enum StyleInjector {
             }
         }
     },
-    INT(StyleInt.class) {
+    INT(StyleInteger.class) {
         @Override
         protected int getIndex(Annotation annotation) {
-            return ((StyleInt) annotation).value();
+            return ((StyleInteger) annotation).value();
         }
         @Override
         protected Object get(int index, TypedArray arr, Field field) {

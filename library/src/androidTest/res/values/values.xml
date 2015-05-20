@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="val_true">true</bool>
+    <integer name="val_1">1</integer>
+    <dimen name="val_1f">1px</dimen>
+    <color name="white">#ffff</color>
+
+</resources>

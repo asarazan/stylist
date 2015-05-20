@@ -48,8 +48,13 @@ public final class Stylist {
 
     public static synchronized void inject(View target, AttributeSet set, int[] attrs) {
         Context c = target.getContext();
-        Class<?> clazz = target.getClass();
         TypedArray arr = c.obtainStyledAttributes(set, attrs);
+        inject(target, arr);
+    }
+
+    // Made public for testing.
+    public static synchronized void inject(View target, TypedArray arr) {
+        Class<?> clazz = target.getClass();
         try {
             for (Field f : clazz.getDeclaredFields()) {
                 for (Annotation a : f.getDeclaredAnnotations()) {

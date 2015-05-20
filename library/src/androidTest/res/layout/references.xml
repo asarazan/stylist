@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.levelmoney.stylist.test.EverythingView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:testBoolean="@bool/val_true"
+    app:testInteger="@integer/val_1"
+    app:testString="@string/app_name"
+    app:testColor="@color/white"
+    app:testDimen="@dimen/val_1f"
+    app:testResource="@string/app_name"/>
