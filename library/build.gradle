@@ -1,5 +1,31 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'stylist'
+    bintrayOrg = 'levelmoney'
+
+    publishedGroupId = 'com.levelmoney.stylist'
+    libraryName = 'Stylist'
+    artifact = 'stylist'
+
+    libraryDescription = 'Android library for easily injecting styleable attributes.'
+
+    siteUrl = 'https://github.com/levelmoney/stylist'
+    gitUrl = 'https://github.com/levelmoney/stylist.git'
+    issueUrl = 'https://github.com/Levelmoney/stylist/issues'
+
+    libraryVersion = '0.1'
+
+    developerId = 'levelmoney'
+    developerName = 'Aaron Sarazan'
+    developerEmail = 'aaron@levelmoney.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
@@ -22,4 +48,5 @@ dependencies {
 
 }
 
-apply from: '../gradle/gradle-mvn-push.gradle'
+apply from: 'https://raw.githubusercontent.com/levelmoney/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/levelmoney/JCenter/master/bintrayv1.gradle'
